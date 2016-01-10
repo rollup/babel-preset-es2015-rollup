@@ -1,11 +1,9 @@
-var relative = require( 'require-relative' );
+var modify = require('modify-babel-preset');
 
-var baseLocation = require.resolve( 'babel-preset-es2015' );
-var plugins = require( baseLocation ).plugins.slice();
+module.exports = modify('2015', {
+	// remove commonjs transform
+	'transform-es2015-modules-commonjs': false,
 
-var commonjsPlugin = relative( 'babel-plugin-transform-es2015-modules-commonjs', baseLocation );
-plugins.splice( plugins.indexOf( commonjsPlugin ), 1 );
-
-plugins.push( require( 'babel-plugin-external-helpers-2' ) );
-
-module.exports = { plugins: plugins };
+	// add external helpers
+	'external-helpers': true
+});
