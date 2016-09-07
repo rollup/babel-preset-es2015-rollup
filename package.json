@@ -4,7 +4,7 @@
   "dependencies": {
     "babel-plugin-external-helpers": "^6.4.0",
     "babel-preset-es2015": "^6.3.13",
-    "modify-babel-preset": "^2.1.1"
+    "modify-babel-preset": "^3.1.0"
   },
   "description": "This is [babel-preset-es2015](http://babeljs.io/docs/plugins/preset-es2015/), minus [modules-commonjs](http://babeljs.io/docs/plugins/transform-es2015-modules-commonjs/), plus [external-helpers](http://babeljs.io/docs/plugins/external-helpers/). Use it with [rollup-plugin-babel](https://github.com/rollup/rollup-plugin-babel).",
   "main": "index.js",
