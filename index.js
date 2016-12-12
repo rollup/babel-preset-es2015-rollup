@@ -1,6 +1,6 @@
 var modify = require('modify-babel-preset');
 
-module.exports = modify('es2015', {
+module.exports = modify('babel-preset-es2015', {
 	// remove commonjs transform
 	'transform-es2015-modules-commonjs': false,
 
