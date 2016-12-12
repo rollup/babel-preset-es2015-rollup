@@ -2,7 +2,7 @@
 
 ## 3.0.0
 
-Remove `modify-babel-preset` and manually edit the preset, to reinstate npm 2 support
+* Remove `modify-babel-preset` and manually edit the preset, to reinstate npm 2 support
 
 ## 2.0.0
 
