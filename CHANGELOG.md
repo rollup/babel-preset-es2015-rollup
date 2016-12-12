@@ -1,5 +1,9 @@
 # babel-preset-es2015-rollup changelog
 
+## 3.0.0
+
+Remove `modify-babel-preset` and manually edit the preset, to reinstate npm 2 support
+
 ## 2.0.0
 
 * Install `babel-plugin-transform-es2015-modules-commonjs` and `babel-plugin-external-helpers` so that `modify-babel-preset` can identify and remove them when npm 2 is involved

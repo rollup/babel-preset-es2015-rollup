@@ -1,9 +1,18 @@
-var modify = require('modify-babel-preset');
+var relative = require( 'require-relative' );
 
-module.exports = modify('es2015', {
-	// remove commonjs transform
-	'transform-es2015-modules-commonjs': false,
+var baseLocation = require.resolve( 'babel-preset-es2015' );
+var plugins = require( baseLocation ).plugins.slice();
 
-	// add external helpers
-	'external-helpers': true
-});
+var commonjsPlugin = relative( 'babel-plugin-transform-es2015-modules-commonjs', baseLocation );
+
+var i = plugins.length;
+while ( i-- ) {
+	var plugin = plugins[i];
+	if ( plugin === commonjsPlugin || plugin[0] === commonjsPlugin ) {
+		plugins.splice( i, 1 );
+	}
+}
+
+plugins.push( require( 'babel-plugin-external-helpers' ) );
+
+module.exports = { plugins: plugins };
