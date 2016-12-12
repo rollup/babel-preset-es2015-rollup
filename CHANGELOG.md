@@ -1,5 +1,9 @@
 # babel-preset-es2015-rollup changelog
 
+## 2.0.0
+
+* Install `babel-plugin-transform-es2015-modules-commonjs` and `babel-plugin-external-helpers` so that `modify-babel-preset` can identify and remove them when npm 2 is involved
+
 ## 1.2.0
 
 * Update modify-babel-preset to fix [#7](https://github.com/rollup/babel-preset-es2015-rollup/issues/7) ([#8](https://github.com/rollup/babel-preset-es2015-rollup/pull/8))
