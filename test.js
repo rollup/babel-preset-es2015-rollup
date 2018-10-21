@@ -1,4 +1,4 @@
-var transform = require('babel-core').transform;
+var transform = require('@babel/core').transform;
 var strictEqual = require('assert').strictEqual;
 var babelPresetEs2015Rollup = require('./');
 
