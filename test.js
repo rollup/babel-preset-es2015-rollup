@@ -1,6 +1,6 @@
-var transform = require('@babel/core').transform;
-var strictEqual = require('assert').strictEqual;
-var babelPresetEs2015Rollup = require('./');
+import { transform } from '@babel/core';
+import { strictEqual } from 'assert';
+import babelPresetEs2015Rollup from './';
 
 describe('babel-preset-es2015-rollup', function() {
   it('transforms ES2015 features that are not modules', function() {

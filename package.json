@@ -12,7 +12,7 @@
   "description": "This is [babel-preset-es2015](http://babeljs.io/docs/plugins/preset-es2015/), minus [modules-commonjs](http://babeljs.io/docs/plugins/transform-es2015-modules-commonjs/), plus [external-helpers](http://babeljs.io/docs/plugins/external-helpers/). Use it with [rollup-plugin-babel](https://github.com/rollup/rollup-plugin-babel).",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --require @babel/register"
   },
   "repository": "rollup/babel-preset-es2015-rollup",
   "author": "Rich Harris",
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "@babel/register": "^7.0.0",
     "mocha": "^3.0.2"
   }
 }
